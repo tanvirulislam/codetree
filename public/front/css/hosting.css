@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nanum+Gothic:wght@700&display=swap");
+
+:root {
+  --primary-color: #6ebe44;
+  --light-color: #efefef;
+  --dark-color: #000;
+  --max-width: 1150px;
+  --grey-color: #c1c1c1;
+  --secondary-color: #4aa46f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border: 1px var(--primary-color) solid;
+}
+.btn-primary:hover {
+  background: transparent;
+  transition: 0.5s;
+}
+.btn-transparent {
+  background: transparent;
+  border: 1px var(--primary-color) solid;
+  margin-bottom: 2px;
+  
+}
+.btn-transparent:hover {
+  background: var(--primary-color);
+  transition: 0.5s;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background: var(--light-color);
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+#hosting-features {
+  background: var(--dark-color);
+  background: rgb(206, 206, 206);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hosting-features-header h1 {
+  font-size: 4rem;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--light-color);
+}
+
+.feature-header {
+  background: var(--primary-color);
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--light-color);
+  padding: 1rem;
+}
+.feature-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.feature-header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.feature-details p {
+  font-size: 1.2rem;
+}
+.feature-details {
+  color: var(--light-color);
+}
+.feature-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-benefit {
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  background: var(--dark-color);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+.feature-benefit:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.55),
+    0.125em 0.125em 0.25em rgba(255, 255, 255, 0.25);
+}
+
+.feature-benefit-header {
+  display: flex;
+  align-items: center;
+}
+.feature-benefit-header i {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.feature-benefit-header h1 {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.feature-benefit p {
+  color: var(--light-color);
+}
+
+#hosting-pricing {
+  color: #fff;
+  background: url("../img/pexels-josh-sorenson-1054397.jpg") no-repeat center
+    bottom/cover;
+  position: relative;
+}
+
+#hosting-pricing:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: var(--dark-color);
+}
+
+#hosting-pricing .hosting-pricing-container {
+  z-index: 1;
+  width: 100%;
+}
+
+.hosting-pricing-header {
+  text-align: center;
+  padding: 2rem;
+}
+.hosting-pricing-header h1 {
+  color: var(--light-color);
+  font-size: 3rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+.hosting-pricing-header p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hosting-pricing-packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem;
+}
+
+.hosting-pricing-package {
+  background: var(--dark-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  opacity: 0.8;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+.hosting-pricing-package:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.55),
+    0.125em 0.125em 0.25em rgba(255, 255, 255, 0.25);
+}
+
+.package-header {
+  height: 8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+}
+.package-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+}
+
+.hosting-pricing-package p {
+  padding: 1rem;
+  background: var(--grey-color);
+  color: var(--dark-color);
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.hosting-pricing-package ul li:before {
+  content: "✓";
+  margin-right: 0.5rem;
+}
+.hosting-pricing-package ul li {
+  margin: 0.5rem;
+  color: var(--light-color);
+}
+
+#hosting-partner {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--light-color);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.hosting-partner-header {
+  color: var(--light-color);
+  padding: 1rem;
+}
+.hosting-partner-header h1 {
+  font-size: 3rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+.hosting-partner-header p {
+  font-size: 1.2rem;
+}
+.hosting-partner-logos {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  background: var(--light-color);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+#main-footer .content-right h3 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+#main-footer .content-right img {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nanum+Gothic:wght@700&display=swap");
+
+:root {
+  --primary-color: #6ebe44;
+  --light-color: #efefef;
+  --dark-color: #000;
+  --max-width: 1150px;
+  --grey-color: #c1c1c1;
+  --secondary-color: #4aa46f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background: rgb(206, 206, 206);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border: 1px var(--primary-color) solid;
+}
+.btn-primary:hover {
+  background: transparent;
+  transition: 0.5s;
+}
+.btn-transparent {
+  background: transparent;
+  border: 1px var(--primary-color) solid;
+}
+.btn-transparent:hover {
+  background: var(--primary-color);
+  transition: 0.5s;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Banner */
+/* Banner */
+/* Banner */
+
+#banner {
+  color: #fff;
+  background: url("../img/pexels-roman-pohorecki-230554.jpg") no-repeat center
+    center/cover;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+#banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: var(--dark-color);
+}
+
+#banner .banner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#banner .banner-content {
+  z-index: 1;
+}
+
+#banner .banner-content h1 {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  text-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+#banner .banner-content p {
+  font-weight: bold;
+  text-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+/* Banner */
+/* Banner */
+/* Banner */
+
+/* Banner Feature */
+/* Banner Feature */
+/* Banner Feature */
+
+#banner-features .amazing-features-header h1 {
+  font-size: 1.5rem;
+}
+
+/* Banner Feature */
+/* Banner Feature */
+/* Banner Feature */
+
+/* Amazing Features */
+/* Amazing Features */
+/* Amazing Features */
+
+#amazing-features {
+  background: #1d5346;
+  color: var(--light-color);
+}
+
+.amazing-features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.amazing-features-header {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.features h2 {
+  font-size: 1.5rem;
+}
+.features p {
+  font-size: 1rem;
+}
+.features i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Amazing Features */
+/* Amazing Features */
+/* Amazing Features */
+
+/* Masking SMS Section */
+/* Masking SMS Section */
+/* Masking SMS Section */
+#masking-sms {
+  background: rgb(206, 206, 206);
+  /* background: url("../img/nate-grant-QQ9LainS6tI-unsplash.jpg") no-repeat center
+    center/cover; */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* position: relative; */
+  color: var(--light-color);
+}
+.masking-sms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+.masking-sms-container-header {
+  padding: 0;
+}
+.masking-sms-container-header h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.masking-sms-container-header p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.masking-sms-container-header h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+}
+
+.package-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.package {
+  background: var(--dark-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  opacity: 0.8;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.55),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.25);
+}
+.package:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.55),
+    0.125em 0.125em 0.25em rgba(255, 255, 255, 0.25);
+}
+.package-header {
+  /* height: 8rem; */
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+}
+
+.package-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.3rem;
+}
+
+.package p {
+  padding: 1rem;
+  background: var(--grey-color);
+  color: var(--dark-color);
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.package ul li:before {
+  content: "✓";
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+.package ul li {
+  font-size: 1.2rem;
+  margin: 2rem;
+  color: var(--light-color);
+}
+#non-masking-sms {
+  background: rgb(206, 206, 206);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--light-color);
+}
+/* Masking SMS Section */
+/* Masking SMS Section */
+/* Masking SMS Section */

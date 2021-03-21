@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #6ebe44;
+  --light-color: #efefef;
+  --dark-color: #000;
+  --max-width: 1150px;
+  --grey-color: #c1c1c1;
+  --secondary-color: #4aa46f;
+}
+
+#contact {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 3rem 0;
+  text-align: center;
+  color: var(--light-color);
+}
+.contact-header {
+  padding: 1rem;
+}
+.contact-header h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.content-left {
+  background: var(--dark-color);
+  padding: 1rem;
+  border-radius: 10px;
+}

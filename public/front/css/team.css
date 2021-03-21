@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #6ebe44;
+  --light-color: #efefef;
+  --dark-color: #000;
+  --max-width: 1150px;
+  --grey-color: #c1c1c1;
+  --secondary-color: #4aa46f;
+}
+
+#team {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 3rem 0;
+}
+.team-header {
+  text-align: center;
+  color: var(--light-color);
+  padding: 2rem;
+}
+.team-header h1 {
+  font-size: 3rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+.team-header p {
+  font-size: 1.4rem;
+}
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem;
+}
+@media only screen and (max-width: 1000px) {
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.team-member {
+  background: var(--dark-color);
+  border-radius: 10px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--light-color);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  overflow: hidden;
+}
+.advisor {
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0.25em 0.25em 0.75em rgba(255, 255, 255, 0.25),
+    0.125em 0.125em 0.25em rgba(255, 255, 255, 0.15);
+}
+.team-member img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+.team-member h1 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.team-member p {
+  font-size: 1.3rem;
+}
+.advisor p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.team-social {
+  background: var(--light-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+.team-social li {
+  background: transparent;
+}
+.team-social li:hover {
+  background: transparent;
+}
+.team-social li a i {
+  font-size: 1.6rem;
+}
+.team-social li a i:hover {
+  color: var(--dark-color);
+}

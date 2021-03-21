@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Nanum+Gothic:wght@700&display=swap");
+
+:root {
+  --primary-color: #6ebe44;
+  --light-color: #efefef;
+  --dark-color: #000;
+  --max-width: 1150px;
+  --grey-color: #c1c1c1;
+  --secondary-color: #4aa46f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+i {
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border: 1px var(--primary-color) solid;
+}
+.btn-primary:hover {
+  background: transparent;
+  transition: 0.5s;
+}
+.btn-transparent {
+  background: transparent;
+  border: 1px var(--primary-color) solid;
+}
+.btn-transparent:hover {
+  background: var(--primary-color);
+  transition: 0.5s;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background: var(--light-color);
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.list li a:hover {
+  color: var(--primary-color) !important;
+}
+
+#portfolio {
+  background: rgb(206, 206, 206);
+}
+
+/* #portfolio .portfolio-container {
+  align-items: center;
+  text-align: center;
+} */
+
+.portfolio-header {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.portfolio-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 1rem;
+  /* text-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15); */
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.portfolio-item {
+  justify-self: center;
+  text-align: left;
+}
+.portfolio-item h2:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.img-div {
+  background: var(--dark-color);
+  height: 25rem;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+#portfolio-web .img-div {
+  height: 15rem;
+}
+.img-div img {
+  height: 100%;
+  object-fit: cover;
+}
+/* .line {
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  background: var(--primary-color);
+  transition: width 0.5s;
+}
+.img-div:hover .line {
+  width: 100%;
+  transition: width 0.5s;
+} */
+.img-div:hover p {
+  display: block;
+  transition: 0.5s;
+  color: var(--light-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+}
+.img-div p {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  display: none;
+}
+.img-div p span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  clip-path: polygon(5% 0, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0.8;
+  background: var(--light-color);
+  animation: text_reveal_box 1.4s ease;
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+.portfolio-item:hover img {
+  opacity: 0.05;
+  transition: 0.3s;
+}
+.portfolio-item h2 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Inside Portfolio */
+/* Inside Portfolio */
+/* Inside Portfolio */
+#portfolio-web {
+  background: rgb(206, 206, 206);
+}
+#portfolio-web .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+#portfolio-web .portfolio-content .img-div p {
+  margin-top: 7rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+#portfolio-web .portfolio-header h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+}
+
+/* Inside Portfolio */
+/* Inside Portfolio */
+/* Inside Portfolio */
+
+#web-project {
+  background: rgb(206, 206, 206);
+  text-align: center;
+}
+#web-project .portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#web-project .portfolio-item:hover img {
+  opacity: 1;
+}
+#web-project .portfolio-header {
+  padding: 0;
+}
+#web-project .portfolio-header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+#web-project .portfolio-item {
+  width: 40rem;
+}
+
+.portfolio-description {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  text-align: left;
+  padding: 2.5rem 0;
+}
+@media only screen and (max-width: 950px) {
+  #web-project .portfolio-content .portfolio-item {
+    justify-self: left;
+  }
+  .portfolio-description {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .portfolio-tags {
+    margin-top: 4rem;
+  }
+}
+
+.portfolio-tags {
+  margin-top: 0.7rem;
+}
+.portfolio-tags h4 {
+  font-weight: 500;
+}
+.portfolio-tags p {
+  font-style: italic;
+}
+
+.portfolio-feedbacks h3 {
+  font-weight: 500;
+}
+.portfolio-feedbacks p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
